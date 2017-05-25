@@ -1,7 +1,5 @@
 <?php
-$dominio = "localhost";
-$conexion =mysql_connect('localhost', 'root', '');mysql_select_db('ejemplo');
-$path = "http://".$dominio."/biblioteca";
-
-
+	$dominio = "localhost";
+	$conexion =mysqli_connect('localhost', 'root', '','ejemplo');
+	$path = "http://".$dominio."/biblioteca";
 ?>

@@ -21,7 +21,7 @@
     </script>
   </head>
   <body onload="limpiar()">
-
+    <a href="../"><input type="button" value="Volver" class="btn btn-primary"></a>
     <form method="post" action="" onload="limpiar()">
       <h1>Ingresar Prestamo</h1>
       <select onchange="setCedula(this.value)">
@@ -53,7 +53,7 @@
       $sql = "insert into prestamo (nombreAlumno,apellidoAlumno) values('".$name."','".$lastname."')";
       $conn -> exec($sql);
       //echo 'Prestamo Ingresado';
-      echo '<script language="javascript">alert("Prestamo Ingresado");</script>'; 
+      echo '<script language="javascript">alert("Prestamo Ingresado");</script>';
     }
   }catch(PDOException $e)
       {
